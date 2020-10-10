@@ -35,7 +35,13 @@ a:hover {
     font-weight: bold;
     
 }
-
+.titre{
+    font-size: 30px;
+    position: absolute;
+    left: 80px;
+    margin-top: 5px;
+    font-family: 'kingthings_petrock_lightRg';
+}
 .bloc {
     width: 100%;
     clear: both;

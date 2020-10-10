@@ -5,6 +5,13 @@
     font-weight: 400;
     font-style: normal
 }
+@font-face {
+    font-family: 'kingthings_petrock_lightRg';
+    src: url('../fonts/kingthings_petrock_light-webfont.woff2') format('woff2'), url('../fonts/kingthings_petrock_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .et-icon-adjustments,
 .et-icon-alarmclock,
