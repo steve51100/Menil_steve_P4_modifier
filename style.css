@@ -76,6 +76,7 @@ a:hover {
 }
 .col-sm-12 p{
     font-size: 23px;
+   
 }
 .bg-center,
 .bg-l-edge,
@@ -826,7 +827,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.jpg");
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -839,7 +840,9 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-
+.black-background{
+    background: rgba(25,25,25,0.3);
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
