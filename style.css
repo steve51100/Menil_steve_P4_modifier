@@ -1,6 +1,3 @@
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -10,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+#contact_email{
+    font-weight: 700;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -17,7 +18,6 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -29,26 +29,7 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-.avis p{
-    font-size: 20px;
-   
-}
-.avis span{
-    font-size: 14px;
-    font-weight: bold;
-    
-}
-.navbar-brand>img{
-    width: 30px;
-}
-.titre{
-    font-size: 30px;
-    font-weight: 400;
-    position: absolute;
-    left: 80px;
-    margin-top: 5px;
-    font-family: 'kingthings_petrock_lightRg';
-}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -61,10 +42,25 @@ a:hover {
     position: relative;
 }
 
+blockquote footer{
+    color: #000;
+}
 
+.social p{
+    display: none;
+}
+
+.social ~ a:hover{
+    text-decoration: none;
+}
+
+.bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 70px 50px;
 }
 
 .bloc-md {
@@ -74,10 +70,7 @@ a:hover {
 .bloc-sm {
     padding: 20px 50px;
 }
-.col-sm-12 p{
-    font-size: 23px;
-   
-}
+
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -323,7 +316,11 @@ a:hover {
     line-height: 44px;
 }
 
-
+.navbar-brand img {
+    max-height: 200px;
+    margin: 0 5px 0 0;
+    display: inline;
+}
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
@@ -352,11 +349,11 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: rgba(243,151,108,0.5);
 }
 
 .navbar-toggle {
-    margin: -40px 10px 0 0;
+    margin: 10px 10px 0 0;
     border: 0px;
 }
 
@@ -550,8 +547,10 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
     text-align: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -665,21 +664,19 @@ h5,
 h6,
 p,
 label,
-.btn
- {
+.btn,
+a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-a{
-    color:#000000 ;
-}
+
 .container {
     max-width: 1000px;
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 35px;
 }
 
 .hero-bloc-text-sub {
@@ -720,8 +717,15 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    width: 25%;
     margin: auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social a:hover{
+    text-decoration: none;
 }
 
 h2 {
@@ -755,8 +759,8 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #000000!important;
+.black {
+    color: #000!important;
 }
 
 .portfolio-thumb {
@@ -772,7 +776,10 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-
+.black-background {
+    background-color: rgba(165, 147, 99, 0.7);
+    padding: 40px 40px 40px 40px;
+}
 
 .bold-link {
     font-weight: 900;
@@ -797,7 +804,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #000000!important;
+    color: #000 !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -827,11 +834,12 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.jpg");
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, .3);
 }
 
-
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
+}
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
@@ -840,9 +848,7 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-.black-background{
-    background: rgba(25,25,25,0.3);
-}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -866,13 +872,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -890,10 +896,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -902,8 +904,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -911,17 +911,6 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -940,6 +929,8 @@ h4 {
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+        display: flex;
+        flex-direction: column;
     }
     .nav > li {
         margin-top: 0;
@@ -1028,9 +1019,6 @@ h4 {
     .voffset-lg {
         margin-top: 30px;
     }
-    form {
-        padding: 5px;
-    }
     .close-lightbox {
         display: inline-block;
     }
@@ -1044,17 +1032,61 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .social {
+        width: 100%;
+    }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+    .bloc-lg{
+        padding: 0;
+    }
+    .row{
+        margin: 0;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .black-background{
+        padding: 0;
+    }
+    blockquote{
+        margin-top: 40px;
+        padding: 0;
+    }
+    .bloc-sm{
+        padding: 0px 50px 0 50px;
+    }
+    .bloc-md{
+        padding: 0;
+    }
+    .navbar-nav{
+        margin: 7.5px -15px 0 -15px;
+    }
+    .tight-width-whitespace{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .col-sm-12 img{
+        max-width: 100px;
+    }
+    .row-no-gutters{
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 576px){
+    form{
+        padding: 25px 5px 25px 5px;
+    }
+    .col-sm-6 div{
+        padding: 0 5px 0 5px;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
