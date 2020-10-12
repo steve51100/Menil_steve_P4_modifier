@@ -42,6 +42,7 @@ a:hover {
     position: relative;
 }
 
+
 blockquote footer{
     color: #000;
 }
@@ -318,8 +319,18 @@ blockquote footer{
 
 .navbar-brand img {
     max-height: 200px;
-    margin: 0 5px 0 0;
+    margin: 0 3px 0 0;
     display: inline;
+    width: 40px;
+}
+.titre-page{
+    font-family: 'kingthings_petrock_lightRg',sans-serif;
+    color: #000000!important;
+    font-size: 28px;
+    margin-bottom: -36px;
+    width: 300px;
+    margin-top: 15px;
+    
 }
 
 .navbar-brand img[src$=svg] {
@@ -694,7 +705,10 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
+}
+.para{
+    font-size: 20px;
 }
 
 .tight-width-whitespace {
